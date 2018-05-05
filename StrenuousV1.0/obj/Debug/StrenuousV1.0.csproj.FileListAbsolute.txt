@@ -18,20 +18,3 @@ C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\Stren
 C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_kisiselbilgilerim.resources
 C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_destek.resources
 C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_kayitol.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\bin\Debug\StrenuousV1.0.exe.config
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\bin\Debug\StrenuousV1.0.exe
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\bin\Debug\StrenuousV1.0.pdb
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1.0.csprojResolveAssemblyReference.cache
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.Form1.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.musteri_bilgileri.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_destek.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_kayitol.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_kisiselbilgilerim.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_login.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_musterilerim.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.Properties.Resources.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1._0.Kazanclarim.resources
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1.0.csproj.GenerateResource.Cache
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1.0.csproj.CoreCompileInputs.cache
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1.0.exe
-C:\Users\buriedalive\Source\Repos\styx\StrenuousV1.0\obj\Debug\StrenuousV1.0.pdb
