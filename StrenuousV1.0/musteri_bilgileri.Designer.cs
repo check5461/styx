@@ -54,11 +54,6 @@
             this.TextBox_baslangic_tarihi = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.TextBox_Arama = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.musteriUrun_dataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.musteriurunbilgisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.musteritakipDataSet = new StrenuousV1._0.musteritakipDataSet();
-            this.bunifuImageButton14 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.main_streneous = new System.Windows.Forms.Label();
-            this.musteriurunbilgisiTableAdapter1 = new StrenuousV1._0.musteritakipDataSetTableAdapters.musteriurunbilgisiTableAdapter();
             this.musIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.domainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ftpipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +63,12 @@
             this.bittarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alinmisucretDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alinacakucretDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musteriurunbilgisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.musteritakipDataSet = new StrenuousV1._0.musteritakipDataSet();
+            this.bunifuImageButton14 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.main_streneous = new System.Windows.Forms.Label();
+            this.musteriurunbilgisiTableAdapter1 = new StrenuousV1._0.musteritakipDataSetTableAdapters.musteriurunbilgisiTableAdapter();
+            this.s_personelTableAdapter1 = new StrenuousV1._0.musteritakipDataSetTableAdapters.S_personelTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
@@ -650,44 +651,6 @@
             this.musteriUrun_dataGrid.TabIndex = 23;
             this.musteriUrun_dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.musteriUrun_dataGrid_CellContentClick);
             // 
-            // musteriurunbilgisiBindingSource
-            // 
-            this.musteriurunbilgisiBindingSource.DataMember = "musteriurunbilgisi";
-            this.musteriurunbilgisiBindingSource.DataSource = this.musteritakipDataSet;
-            // 
-            // musteritakipDataSet
-            // 
-            this.musteritakipDataSet.DataSetName = "musteritakipDataSet";
-            this.musteritakipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bunifuImageButton14
-            // 
-            this.bunifuImageButton14.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton14.Image")));
-            this.bunifuImageButton14.ImageActive = null;
-            this.bunifuImageButton14.Location = new System.Drawing.Point(31, 21);
-            this.bunifuImageButton14.Name = "bunifuImageButton14";
-            this.bunifuImageButton14.Size = new System.Drawing.Size(43, 32);
-            this.bunifuImageButton14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton14.TabIndex = 28;
-            this.bunifuImageButton14.TabStop = false;
-            this.bunifuImageButton14.Zoom = 10;
-            // 
-            // main_streneous
-            // 
-            this.main_streneous.AutoSize = true;
-            this.main_streneous.BackColor = System.Drawing.Color.Transparent;
-            this.main_streneous.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.main_streneous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
-            this.main_streneous.Location = new System.Drawing.Point(80, 21);
-            this.main_streneous.Name = "main_streneous";
-            this.main_streneous.Size = new System.Drawing.Size(241, 32);
-            this.main_streneous.TabIndex = 27;
-            this.main_streneous.Text = "Müşteri Ürün Bilgileri";
-            // 
-            // musteriurunbilgisiTableAdapter1
-            // 
-            this.musteriurunbilgisiTableAdapter1.ClearBeforeFill = true;
-            // 
             // musIDDataGridViewTextBoxColumn
             // 
             this.musIDDataGridViewTextBoxColumn.DataPropertyName = "musID";
@@ -750,6 +713,48 @@
             this.alinacakucretDataGridViewTextBoxColumn.HeaderText = "Alınacak Ücret";
             this.alinacakucretDataGridViewTextBoxColumn.Name = "alinacakucretDataGridViewTextBoxColumn";
             this.alinacakucretDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // musteriurunbilgisiBindingSource
+            // 
+            this.musteriurunbilgisiBindingSource.DataMember = "musteriurunbilgisi";
+            this.musteriurunbilgisiBindingSource.DataSource = this.musteritakipDataSet;
+            // 
+            // musteritakipDataSet
+            // 
+            this.musteritakipDataSet.DataSetName = "musteritakipDataSet";
+            this.musteritakipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bunifuImageButton14
+            // 
+            this.bunifuImageButton14.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton14.Image")));
+            this.bunifuImageButton14.ImageActive = null;
+            this.bunifuImageButton14.Location = new System.Drawing.Point(31, 21);
+            this.bunifuImageButton14.Name = "bunifuImageButton14";
+            this.bunifuImageButton14.Size = new System.Drawing.Size(43, 32);
+            this.bunifuImageButton14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton14.TabIndex = 28;
+            this.bunifuImageButton14.TabStop = false;
+            this.bunifuImageButton14.Zoom = 10;
+            // 
+            // main_streneous
+            // 
+            this.main_streneous.AutoSize = true;
+            this.main_streneous.BackColor = System.Drawing.Color.Transparent;
+            this.main_streneous.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.main_streneous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
+            this.main_streneous.Location = new System.Drawing.Point(80, 21);
+            this.main_streneous.Name = "main_streneous";
+            this.main_streneous.Size = new System.Drawing.Size(241, 32);
+            this.main_streneous.TabIndex = 27;
+            this.main_streneous.Text = "Müşteri Ürün Bilgileri";
+            // 
+            // musteriurunbilgisiTableAdapter1
+            // 
+            this.musteriurunbilgisiTableAdapter1.ClearBeforeFill = true;
+            // 
+            // s_personelTableAdapter1
+            // 
+            this.s_personelTableAdapter1.ClearBeforeFill = true;
             // 
             // musteri_bilgileri
             // 
@@ -840,5 +845,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bittarihiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn alinmisucretDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn alinacakucretDataGridViewTextBoxColumn;
+        private musteritakipDataSetTableAdapters.S_personelTableAdapter s_personelTableAdapter1;
     }
 }
