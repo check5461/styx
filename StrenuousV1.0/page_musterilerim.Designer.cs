@@ -54,10 +54,6 @@
             this.bunifuImageButton10 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton11 = new Bunifu.Framework.UI.BunifuImageButton();
             this.musteriDataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.musteritakipDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.musteritakipDataSet = new StrenuousV1._0.musteritakipDataSet();
-            this.main_streneous = new System.Windows.Forms.Label();
-            this.bunifuImageButton12 = new Bunifu.Framework.UI.BunifuImageButton();
             this.Column_Musteri_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_tc_kimlik_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_musteri_adi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +62,24 @@
             this.Column_sabit_hat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_personel_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_adres_bilgisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musteriIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soyadiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tel1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tel2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musteribilgiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.musteritakipDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.musteritakipDataSet = new StrenuousV1._0.musteritakipDataSet();
+            this.main_streneous = new System.Windows.Forms.Label();
+            this.bunifuImageButton12 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.TextBox_Arama = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.bunifuImageButton13 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.musteribilgiTableAdapter = new StrenuousV1._0.musteritakipDataSetTableAdapters.musteribilgiTableAdapter();
+            this.musteribilgiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.musteriurunbilgisiTableAdapter = new StrenuousV1._0.musteritakipDataSetTableAdapters.musteriurunbilgisiTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
@@ -78,9 +92,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteriDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musteribilgiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musteribilgiBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuImageButton1
@@ -538,6 +555,7 @@
             this.bunifuImageButton9.TabIndex = 21;
             this.bunifuImageButton9.TabStop = false;
             this.bunifuImageButton9.Zoom = 10;
+            this.bunifuImageButton9.Click += new System.EventHandler(this.bunifuImageButton9_Click);
             // 
             // bunifuImageButton10
             // 
@@ -550,6 +568,7 @@
             this.bunifuImageButton10.TabIndex = 22;
             this.bunifuImageButton10.TabStop = false;
             this.bunifuImageButton10.Zoom = 10;
+            this.bunifuImageButton10.Click += new System.EventHandler(this.bunifuImageButton10_Click);
             // 
             // bunifuImageButton11
             // 
@@ -562,6 +581,7 @@
             this.bunifuImageButton11.TabIndex = 23;
             this.bunifuImageButton11.TabStop = false;
             this.bunifuImageButton11.Zoom = 10;
+            this.bunifuImageButton11.Click += new System.EventHandler(this.bunifuImageButton11_Click);
             // 
             // musteriDataGridView
             // 
@@ -588,8 +608,16 @@
             this.Column_gsm_no,
             this.Column_sabit_hat,
             this.Column_personel_id,
-            this.Column_adres_bilgisi});
-            this.musteriDataGridView.DataSource = this.musteritakipDataSetBindingSource;
+            this.Column_adres_bilgisi,
+            this.musteriIDDataGridViewTextBoxColumn,
+            this.adiDataGridViewTextBoxColumn,
+            this.soyadiDataGridViewTextBoxColumn,
+            this.tcDataGridViewTextBoxColumn,
+            this.tel1DataGridViewTextBoxColumn,
+            this.tel2DataGridViewTextBoxColumn,
+            this.adressDataGridViewTextBoxColumn,
+            this.personelIdDataGridViewTextBoxColumn});
+            this.musteriDataGridView.DataSource = this.musteribilgiBindingSource;
             this.musteriDataGridView.DoubleBuffered = true;
             this.musteriDataGridView.EnableHeadersVisualStyles = false;
             this.musteriDataGridView.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
@@ -600,40 +628,8 @@
             this.musteriDataGridView.RowTemplate.Height = 24;
             this.musteriDataGridView.Size = new System.Drawing.Size(962, 244);
             this.musteriDataGridView.TabIndex = 24;
-            // 
-            // musteritakipDataSetBindingSource
-            // 
-            this.musteritakipDataSetBindingSource.DataSource = this.musteritakipDataSet;
-            this.musteritakipDataSetBindingSource.Position = 0;
-            // 
-            // musteritakipDataSet
-            // 
-            this.musteritakipDataSet.DataSetName = "musteritakipDataSet";
-            this.musteritakipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // main_streneous
-            // 
-            this.main_streneous.AutoSize = true;
-            this.main_streneous.BackColor = System.Drawing.Color.Transparent;
-            this.main_streneous.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.main_streneous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
-            this.main_streneous.Location = new System.Drawing.Point(80, 23);
-            this.main_streneous.Name = "main_streneous";
-            this.main_streneous.Size = new System.Drawing.Size(150, 32);
-            this.main_streneous.TabIndex = 25;
-            this.main_streneous.Text = "Müşterilerim";
-            // 
-            // bunifuImageButton12
-            // 
-            this.bunifuImageButton12.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton12.Image")));
-            this.bunifuImageButton12.ImageActive = null;
-            this.bunifuImageButton12.Location = new System.Drawing.Point(31, 18);
-            this.bunifuImageButton12.Name = "bunifuImageButton12";
-            this.bunifuImageButton12.Size = new System.Drawing.Size(43, 37);
-            this.bunifuImageButton12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton12.TabIndex = 26;
-            this.bunifuImageButton12.TabStop = false;
-            this.bunifuImageButton12.Zoom = 10;
+            this.musteriDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.musteriDataGridView_CellClick);
+            this.musteriDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.musteriDataGridView_CellContentClick);
             // 
             // Column_Musteri_id
             // 
@@ -681,10 +677,168 @@
             this.Column_adres_bilgisi.Name = "Column_adres_bilgisi";
             this.Column_adres_bilgisi.Width = 135;
             // 
+            // musteriIDDataGridViewTextBoxColumn
+            // 
+            this.musteriIDDataGridViewTextBoxColumn.DataPropertyName = "musteriID";
+            this.musteriIDDataGridViewTextBoxColumn.HeaderText = "musteriID";
+            this.musteriIDDataGridViewTextBoxColumn.Name = "musteriIDDataGridViewTextBoxColumn";
+            this.musteriIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // adiDataGridViewTextBoxColumn
+            // 
+            this.adiDataGridViewTextBoxColumn.DataPropertyName = "adi";
+            this.adiDataGridViewTextBoxColumn.HeaderText = "adi";
+            this.adiDataGridViewTextBoxColumn.Name = "adiDataGridViewTextBoxColumn";
+            // 
+            // soyadiDataGridViewTextBoxColumn
+            // 
+            this.soyadiDataGridViewTextBoxColumn.DataPropertyName = "soyadi";
+            this.soyadiDataGridViewTextBoxColumn.HeaderText = "soyadi";
+            this.soyadiDataGridViewTextBoxColumn.Name = "soyadiDataGridViewTextBoxColumn";
+            // 
+            // tcDataGridViewTextBoxColumn
+            // 
+            this.tcDataGridViewTextBoxColumn.DataPropertyName = "tc";
+            this.tcDataGridViewTextBoxColumn.HeaderText = "tc";
+            this.tcDataGridViewTextBoxColumn.Name = "tcDataGridViewTextBoxColumn";
+            // 
+            // tel1DataGridViewTextBoxColumn
+            // 
+            this.tel1DataGridViewTextBoxColumn.DataPropertyName = "tel1";
+            this.tel1DataGridViewTextBoxColumn.HeaderText = "tel1";
+            this.tel1DataGridViewTextBoxColumn.Name = "tel1DataGridViewTextBoxColumn";
+            // 
+            // tel2DataGridViewTextBoxColumn
+            // 
+            this.tel2DataGridViewTextBoxColumn.DataPropertyName = "tel2";
+            this.tel2DataGridViewTextBoxColumn.HeaderText = "tel2";
+            this.tel2DataGridViewTextBoxColumn.Name = "tel2DataGridViewTextBoxColumn";
+            // 
+            // adressDataGridViewTextBoxColumn
+            // 
+            this.adressDataGridViewTextBoxColumn.DataPropertyName = "adress";
+            this.adressDataGridViewTextBoxColumn.HeaderText = "adress";
+            this.adressDataGridViewTextBoxColumn.Name = "adressDataGridViewTextBoxColumn";
+            // 
+            // personelIdDataGridViewTextBoxColumn
+            // 
+            this.personelIdDataGridViewTextBoxColumn.DataPropertyName = "personelId";
+            this.personelIdDataGridViewTextBoxColumn.HeaderText = "personelId";
+            this.personelIdDataGridViewTextBoxColumn.Name = "personelIdDataGridViewTextBoxColumn";
+            // 
+            // musteribilgiBindingSource
+            // 
+            this.musteribilgiBindingSource.DataMember = "musteribilgi";
+            this.musteribilgiBindingSource.DataSource = this.musteritakipDataSetBindingSource;
+            // 
+            // musteritakipDataSetBindingSource
+            // 
+            this.musteritakipDataSetBindingSource.DataSource = this.musteritakipDataSet;
+            this.musteritakipDataSetBindingSource.Position = 0;
+            // 
+            // musteritakipDataSet
+            // 
+            this.musteritakipDataSet.DataSetName = "musteritakipDataSet";
+            this.musteritakipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // main_streneous
+            // 
+            this.main_streneous.AutoSize = true;
+            this.main_streneous.BackColor = System.Drawing.Color.Transparent;
+            this.main_streneous.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.main_streneous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
+            this.main_streneous.Location = new System.Drawing.Point(80, 23);
+            this.main_streneous.Name = "main_streneous";
+            this.main_streneous.Size = new System.Drawing.Size(150, 32);
+            this.main_streneous.TabIndex = 25;
+            this.main_streneous.Text = "Müşterilerim";
+            // 
+            // bunifuImageButton12
+            // 
+            this.bunifuImageButton12.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton12.Image")));
+            this.bunifuImageButton12.ImageActive = null;
+            this.bunifuImageButton12.Location = new System.Drawing.Point(31, 18);
+            this.bunifuImageButton12.Name = "bunifuImageButton12";
+            this.bunifuImageButton12.Size = new System.Drawing.Size(43, 37);
+            this.bunifuImageButton12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton12.TabIndex = 26;
+            this.bunifuImageButton12.TabStop = false;
+            this.bunifuImageButton12.Zoom = 10;
+            // 
+            // TextBox_Arama
+            // 
+            this.TextBox_Arama.AcceptsReturn = false;
+            this.TextBox_Arama.AcceptsTab = false;
+            this.TextBox_Arama.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TextBox_Arama.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TextBox_Arama.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_Arama.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TextBox_Arama.BackgroundImage")));
+            this.TextBox_Arama.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(56)))));
+            this.TextBox_Arama.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.TextBox_Arama.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(72)))), ((int)(((byte)(164)))));
+            this.TextBox_Arama.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.TextBox_Arama.BorderRadius = 1;
+            this.TextBox_Arama.BorderThickness = 2;
+            this.TextBox_Arama.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TextBox_Arama.FillColor = System.Drawing.Color.White;
+            this.TextBox_Arama.HideSelection = true;
+            this.TextBox_Arama.IconLeft = null;
+            this.TextBox_Arama.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.TextBox_Arama.IconPadding = 10;
+            this.TextBox_Arama.IconRight = null;
+            this.TextBox_Arama.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.TextBox_Arama.Location = new System.Drawing.Point(617, 36);
+            this.TextBox_Arama.MaximumSize = new System.Drawing.Size(400, 100);
+            this.TextBox_Arama.MaxLength = 32767;
+            this.TextBox_Arama.MinimumSize = new System.Drawing.Size(100, 35);
+            this.TextBox_Arama.Modified = false;
+            this.TextBox_Arama.Name = "TextBox_Arama";
+            this.TextBox_Arama.PasswordChar = '\0';
+            this.TextBox_Arama.ReadOnly = false;
+            this.TextBox_Arama.SelectedText = "";
+            this.TextBox_Arama.SelectionLength = 0;
+            this.TextBox_Arama.SelectionStart = 0;
+            this.TextBox_Arama.ShortcutsEnabled = true;
+            this.TextBox_Arama.Size = new System.Drawing.Size(203, 44);
+            this.TextBox_Arama.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.TextBox_Arama.TabIndex = 28;
+            this.TextBox_Arama.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBox_Arama.TextMarginLeft = 5;
+            this.TextBox_Arama.TextPlaceholder = "";
+            this.TextBox_Arama.UseSystemPasswordChar = false;
+            // 
+            // bunifuImageButton13
+            // 
+            this.bunifuImageButton13.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton13.Image")));
+            this.bunifuImageButton13.ImageActive = null;
+            this.bunifuImageButton13.Location = new System.Drawing.Point(489, 36);
+            this.bunifuImageButton13.Name = "bunifuImageButton13";
+            this.bunifuImageButton13.Size = new System.Drawing.Size(122, 44);
+            this.bunifuImageButton13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton13.TabIndex = 27;
+            this.bunifuImageButton13.TabStop = false;
+            this.bunifuImageButton13.Zoom = 10;
+            this.bunifuImageButton13.Click += new System.EventHandler(this.bunifuImageButton13_Click);
+            // 
+            // musteribilgiTableAdapter
+            // 
+            this.musteribilgiTableAdapter.ClearBeforeFill = true;
+            // 
+            // musteribilgiBindingSource1
+            // 
+            this.musteribilgiBindingSource1.DataMember = "musteribilgi";
+            this.musteribilgiBindingSource1.DataSource = this.musteritakipDataSet;
+            // 
+            // musteriurunbilgisiTableAdapter
+            // 
+            this.musteriurunbilgisiTableAdapter.ClearBeforeFill = true;
+            // 
             // page_musterilerim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.TextBox_Arama);
+            this.Controls.Add(this.bunifuImageButton13);
             this.Controls.Add(this.bunifuImageButton12);
             this.Controls.Add(this.main_streneous);
             this.Controls.Add(this.musteriDataGridView);
@@ -708,7 +862,7 @@
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.bunifuImageButton1);
             this.Name = "page_musterilerim";
-            this.Size = new System.Drawing.Size(968, 675);
+            this.Size = new System.Drawing.Size(985, 686);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
@@ -721,9 +875,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteriDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musteribilgiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musteribilgiBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -765,5 +922,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_sabit_hat;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_personel_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_adres_bilgisi;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_Arama;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton13;
+        private System.Windows.Forms.BindingSource musteribilgiBindingSource;
+        private musteritakipDataSetTableAdapters.musteribilgiTableAdapter musteribilgiTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn musteriIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soyadiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tcDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tel1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tel2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn personelIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource musteribilgiBindingSource1;
+        private musteritakipDataSetTableAdapters.musteriurunbilgisiTableAdapter musteriurunbilgisiTableAdapter;
     }
 }

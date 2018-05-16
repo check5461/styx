@@ -167,7 +167,7 @@
         kp8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtTelefon.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAxCAYAAAB08l1MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD0SURBVHhe7dWxDYMwFEVRRssIGSEt0GQERvAyzJaS2GAJ
@@ -177,7 +177,7 @@
         ma17Dx+xTNP06Ecz+9yzp3LowbQfxszOXUMBfhmGN4q12Lbc7F1HAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtSifre.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAxCAYAAAB08l1MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD0SURBVHhe7dWxDYMwFEVRRssIGSEt0GQERvAyzJaS2GAJ
@@ -187,7 +187,7 @@
         ma17Dx+xTNP06Ecz+9yzp3LowbQfxszOXUMBfhmGN4q12Lbc7F1HAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtKulAdi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAxCAYAAAB08l1MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD0SURBVHhe7dWxDYMwFEVRRssIGSEt0GQERvAyzJaS2GAJ
@@ -197,7 +197,7 @@
         ma17Dx+xTNP06Ecz+9yzp3LowbQfxszOXUMBfhmGN4q12Lbc7F1HAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtTcNo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAxCAYAAAB08l1MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD0SURBVHhe7dWxDYMwFEVRRssIGSEt0GQERvAyzJaS2GAJ
@@ -207,7 +207,7 @@
         ma17Dx+xTNP06Ecz+9yzp3LowbQfxszOXUMBfhmGN4q12Lbc7F1HAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtSoyadi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAxCAYAAAB08l1MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD0SURBVHhe7dWxDYMwFEVRRssIGSEt0GQERvAyzJaS2GAJ
@@ -217,7 +217,7 @@
         ma17Dx+xTNP06Ecz+9yzp3LowbQfxszOXUMBfhmGN4q12Lbc7F1HAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtAdi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAxCAYAAAB08l1MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD0SURBVHhe7dWxDYMwFEVRRssIGSEt0GQERvAyzJaS2GAJ
@@ -227,7 +227,7 @@
         ma17Dx+xTNP06Ecz+9yzp3LowbQfxszOXUMBfhmGN4q12Lbc7F1HAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="textBox_Musteri_id_txt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtSeriNo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAxCAYAAAB08l1MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD0SURBVHhe7dWxDYMwFEVRRssIGSEt0GQERvAyzJaS2GAJ

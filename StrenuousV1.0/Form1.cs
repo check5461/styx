@@ -19,7 +19,7 @@ namespace StrenuousV1._0
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-
+            page_destek1.BringToFront();
         }
 
         Bunifu.Framework.UI.Drag MoveForm = new Bunifu.Framework.UI.Drag();
@@ -56,6 +56,16 @@ namespace StrenuousV1._0
         private void musteribilgileri_Click(object sender, EventArgs e)
         {
             musteri_bilgileri1.BringToFront();
+        }
+
+        private void kisiselbilgilerim_Click(object sender, EventArgs e)
+        {
+            page_kisiselbilgilerim1.BringToFront();
+        }
+
+        private void page_login1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

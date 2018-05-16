@@ -14,3 +14,4 @@ C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\Stren
 C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_kisiselbilgilerim.resources
 C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_destek.resources
 C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\StrenuousV1.0\obj\Debug\StrenuousV1._0.page_kayitol.resources
+C:\Users\ersin\onedrive\belgeler\visual studio 2015\Projects\StrenuousV1.0\StrenuousV1.0\obj\Debug\StrenuousV1._0.SuperAdminPanel.resources
