@@ -82,7 +82,16 @@ SELECT musteriID, adi, soyadi, tc, tel1, tel2, adress, personelId FROM musteribi
               <Mapping SourceColumn="adress" DataSetColumn="adress" />
               <Mapping SourceColumn="personelId" DataSetColumn="personelId" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="musteritakipConnectionString (Settings)" DbObjectName="musteritakip.dbo.musteribilgi" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FilterByMusteri" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FilterByMusteri" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FilterByMusteri">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT musteriID, adi, soyadi, tc, tel1, tel2, adress, personelId FROM dbo.musteribilgi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="musteriurunbilgisiTableAdapter" GeneratorDataComponentClassName="musteriurunbilgisiTableAdapter" Name="musteriurunbilgisi" UserDataComponentName="musteriurunbilgisiTableAdapter">
             <MainSource>
@@ -273,7 +282,7 @@ SELECT seriNo, atananPersonelId, bitmeZamani FROM SeriNumaralari WHERE (seriNo =
   <xs:element name="musteritakipDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="musteritakipDataSet" msprop:Generator_UserDSName="musteritakipDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="musteribilgi" msprop:Generator_TableClassName="musteribilgiDataTable" msprop:Generator_TableVarName="tablemusteribilgi" msprop:Generator_RowChangedName="musteribilgiRowChanged" msprop:Generator_TablePropName="musteribilgi" msprop:Generator_RowDeletingName="musteribilgiRowDeleting" msprop:Generator_RowChangingName="musteribilgiRowChanging" msprop:Generator_RowEvHandlerName="musteribilgiRowChangeEventHandler" msprop:Generator_RowDeletedName="musteribilgiRowDeleted" msprop:Generator_RowClassName="musteribilgiRow" msprop:Generator_UserTableName="musteribilgi" msprop:Generator_RowEvArgName="musteribilgiRowChangeEvent">
+        <xs:element name="musteribilgi" msprop:Generator_TableClassName="musteribilgiDataTable" msprop:Generator_TableVarName="tablemusteribilgi" msprop:Generator_TablePropName="musteribilgi" msprop:Generator_RowDeletingName="musteribilgiRowDeleting" msprop:Generator_RowChangingName="musteribilgiRowChanging" msprop:Generator_RowEvHandlerName="musteribilgiRowChangeEventHandler" msprop:Generator_RowDeletedName="musteribilgiRowDeleted" msprop:Generator_UserTableName="musteribilgi" msprop:Generator_RowChangedName="musteribilgiRowChanged" msprop:Generator_RowEvArgName="musteribilgiRowChangeEvent" msprop:Generator_RowClassName="musteribilgiRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="musteriID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnmusteriID" msprop:Generator_ColumnPropNameInRow="musteriID" msprop:Generator_ColumnPropNameInTable="musteriIDColumn" msprop:Generator_UserColumnName="musteriID" type="xs:int" />
@@ -323,7 +332,7 @@ SELECT seriNo, atananPersonelId, bitmeZamani FROM SeriNumaralari WHERE (seriNo =
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="musteriurunbilgisi" msprop:Generator_TableClassName="musteriurunbilgisiDataTable" msprop:Generator_TableVarName="tablemusteriurunbilgisi" msprop:Generator_RowChangedName="musteriurunbilgisiRowChanged" msprop:Generator_TablePropName="musteriurunbilgisi" msprop:Generator_RowDeletingName="musteriurunbilgisiRowDeleting" msprop:Generator_RowChangingName="musteriurunbilgisiRowChanging" msprop:Generator_RowEvHandlerName="musteriurunbilgisiRowChangeEventHandler" msprop:Generator_RowDeletedName="musteriurunbilgisiRowDeleted" msprop:Generator_RowClassName="musteriurunbilgisiRow" msprop:Generator_UserTableName="musteriurunbilgisi" msprop:Generator_RowEvArgName="musteriurunbilgisiRowChangeEvent">
+        <xs:element name="musteriurunbilgisi" msprop:Generator_TableClassName="musteriurunbilgisiDataTable" msprop:Generator_TableVarName="tablemusteriurunbilgisi" msprop:Generator_TablePropName="musteriurunbilgisi" msprop:Generator_RowDeletingName="musteriurunbilgisiRowDeleting" msprop:Generator_RowChangingName="musteriurunbilgisiRowChanging" msprop:Generator_RowEvHandlerName="musteriurunbilgisiRowChangeEventHandler" msprop:Generator_RowDeletedName="musteriurunbilgisiRowDeleted" msprop:Generator_UserTableName="musteriurunbilgisi" msprop:Generator_RowChangedName="musteriurunbilgisiRowChanged" msprop:Generator_RowEvArgName="musteriurunbilgisiRowChangeEvent" msprop:Generator_RowClassName="musteriurunbilgisiRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="musID" msprop:Generator_ColumnVarNameInTable="columnmusID" msprop:Generator_ColumnPropNameInRow="musID" msprop:Generator_ColumnPropNameInTable="musIDColumn" msprop:Generator_UserColumnName="musID" type="xs:int" />
@@ -356,7 +365,7 @@ SELECT seriNo, atananPersonelId, bitmeZamani FROM SeriNumaralari WHERE (seriNo =
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="S_personel" msprop:Generator_TableClassName="S_personelDataTable" msprop:Generator_TableVarName="tableS_personel" msprop:Generator_RowChangedName="S_personelRowChanged" msprop:Generator_TablePropName="S_personel" msprop:Generator_RowDeletingName="S_personelRowDeleting" msprop:Generator_RowChangingName="S_personelRowChanging" msprop:Generator_RowEvHandlerName="S_personelRowChangeEventHandler" msprop:Generator_RowDeletedName="S_personelRowDeleted" msprop:Generator_RowClassName="S_personelRow" msprop:Generator_UserTableName="S_personel" msprop:Generator_RowEvArgName="S_personelRowChangeEvent">
+        <xs:element name="S_personel" msprop:Generator_TableClassName="S_personelDataTable" msprop:Generator_TableVarName="tableS_personel" msprop:Generator_TablePropName="S_personel" msprop:Generator_RowDeletingName="S_personelRowDeleting" msprop:Generator_RowChangingName="S_personelRowChanging" msprop:Generator_RowEvHandlerName="S_personelRowChangeEventHandler" msprop:Generator_RowDeletedName="S_personelRowDeleted" msprop:Generator_UserTableName="S_personel" msprop:Generator_RowChangedName="S_personelRowChanged" msprop:Generator_RowEvArgName="S_personelRowChangeEvent" msprop:Generator_RowClassName="S_personelRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PersonelID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPersonelID" msprop:Generator_ColumnPropNameInRow="PersonelID" msprop:Generator_ColumnPropNameInTable="PersonelIDColumn" msprop:Generator_UserColumnName="PersonelID" type="xs:int" />
@@ -405,7 +414,7 @@ SELECT seriNo, atananPersonelId, bitmeZamani FROM SeriNumaralari WHERE (seriNo =
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SeriNumaralari" msprop:Generator_TableClassName="SeriNumaralariDataTable" msprop:Generator_TableVarName="tableSeriNumaralari" msprop:Generator_RowChangedName="SeriNumaralariRowChanged" msprop:Generator_TablePropName="SeriNumaralari" msprop:Generator_RowDeletingName="SeriNumaralariRowDeleting" msprop:Generator_RowChangingName="SeriNumaralariRowChanging" msprop:Generator_RowEvHandlerName="SeriNumaralariRowChangeEventHandler" msprop:Generator_RowDeletedName="SeriNumaralariRowDeleted" msprop:Generator_RowClassName="SeriNumaralariRow" msprop:Generator_UserTableName="SeriNumaralari" msprop:Generator_RowEvArgName="SeriNumaralariRowChangeEvent">
+        <xs:element name="SeriNumaralari" msprop:Generator_TableClassName="SeriNumaralariDataTable" msprop:Generator_TableVarName="tableSeriNumaralari" msprop:Generator_TablePropName="SeriNumaralari" msprop:Generator_RowDeletingName="SeriNumaralariRowDeleting" msprop:Generator_RowChangingName="SeriNumaralariRowChanging" msprop:Generator_RowEvHandlerName="SeriNumaralariRowChangeEventHandler" msprop:Generator_RowDeletedName="SeriNumaralariRowDeleted" msprop:Generator_UserTableName="SeriNumaralari" msprop:Generator_RowChangedName="SeriNumaralariRowChanged" msprop:Generator_RowEvArgName="SeriNumaralariRowChangeEvent" msprop:Generator_RowClassName="SeriNumaralariRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="seriNo" msprop:Generator_ColumnVarNameInTable="columnseriNo" msprop:Generator_ColumnPropNameInRow="seriNo" msprop:Generator_ColumnPropNameInTable="seriNoColumn" msprop:Generator_UserColumnName="seriNo">
@@ -437,9 +446,9 @@ SELECT seriNo, atananPersonelId, bitmeZamani FROM SeriNumaralari WHERE (seriNo =
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_musteribilgi_S_personel" msdata:parent="S_personel" msdata:child="musteribilgi" msdata:parentkey="PersonelID" msdata:childkey="musteriID" msprop:Generator_UserChildTable="musteribilgi" msprop:Generator_ChildPropName="GetmusteribilgiRows" msprop:Generator_UserRelationName="FK_musteribilgi_S_personel" msprop:Generator_ParentPropName="S_personelRow" msprop:Generator_RelationVarName="relationFK_musteribilgi_S_personel" msprop:Generator_UserParentTable="S_personel" />
-      <msdata:Relationship name="FK_musteriurunbilgisi_musteribilgi" msdata:parent="musteribilgi" msdata:child="musteriurunbilgisi" msdata:parentkey="musteriID" msdata:childkey="musID" msprop:Generator_UserChildTable="musteriurunbilgisi" msprop:Generator_ChildPropName="GetmusteriurunbilgisiRows" msprop:Generator_UserRelationName="FK_musteriurunbilgisi_musteribilgi" msprop:Generator_RelationVarName="relationFK_musteriurunbilgisi_musteribilgi" msprop:Generator_UserParentTable="musteribilgi" msprop:Generator_ParentPropName="musteribilgiRow" />
-      <msdata:Relationship name="FK_SeriNumaralari_S_personel" msdata:parent="S_personel" msdata:child="SeriNumaralari" msdata:parentkey="PersonelID" msdata:childkey="atananPersonelId" msprop:Generator_UserChildTable="SeriNumaralari" msprop:Generator_ChildPropName="GetSeriNumaralariRows" msprop:Generator_UserRelationName="FK_SeriNumaralari_S_personel" msprop:Generator_RelationVarName="relationFK_SeriNumaralari_S_personel" msprop:Generator_UserParentTable="S_personel" msprop:Generator_ParentPropName="S_personelRow" />
+      <msdata:Relationship name="FK_musteribilgi_S_personel" msdata:parent="S_personel" msdata:child="musteribilgi" msdata:parentkey="PersonelID" msdata:childkey="musteriID" msprop:Generator_UserChildTable="musteribilgi" msprop:Generator_ChildPropName="GetmusteribilgiRows" msprop:Generator_UserRelationName="FK_musteribilgi_S_personel" msprop:Generator_RelationVarName="relationFK_musteribilgi_S_personel" msprop:Generator_UserParentTable="S_personel" msprop:Generator_ParentPropName="S_personelRow" />
+      <msdata:Relationship name="FK_musteriurunbilgisi_musteribilgi" msdata:parent="musteribilgi" msdata:child="musteriurunbilgisi" msdata:parentkey="musteriID" msdata:childkey="musID" msprop:Generator_UserChildTable="musteriurunbilgisi" msprop:Generator_ChildPropName="GetmusteriurunbilgisiRows" msprop:Generator_UserRelationName="FK_musteriurunbilgisi_musteribilgi" msprop:Generator_ParentPropName="musteribilgiRow" msprop:Generator_RelationVarName="relationFK_musteriurunbilgisi_musteribilgi" msprop:Generator_UserParentTable="musteribilgi" />
+      <msdata:Relationship name="FK_SeriNumaralari_S_personel" msdata:parent="S_personel" msdata:child="SeriNumaralari" msdata:parentkey="PersonelID" msdata:childkey="atananPersonelId" msprop:Generator_UserChildTable="SeriNumaralari" msprop:Generator_ChildPropName="GetSeriNumaralariRows" msprop:Generator_UserRelationName="FK_SeriNumaralari_S_personel" msprop:Generator_ParentPropName="S_personelRow" msprop:Generator_RelationVarName="relationFK_SeriNumaralari_S_personel" msprop:Generator_UserParentTable="S_personel" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

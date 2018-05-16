@@ -53,6 +53,18 @@ namespace StrenuousV1._0
                 dataGrid.DataSource = ds.Tables[0];
             }
         }
+        static public void DataGridDoldur1(string query, Bunifu.Framework.UI.BunifuCustomDataGrid dataGrid)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                var dataAdapter = new SqlDataAdapter(query, connection);
+                var commandBuild = new SqlCommandBuilder(dataAdapter);
+                var ds = new DataSet();
+                dataAdapter.Fill(ds);
+                dataGrid.ReadOnly = true;
+                dataGrid.DataSource = ds.Tables[0];
+            }
+        }
         static public List<dynamic> SelectSorgusuTekSatir(string query, int sutunSayisi)
         {
             //Veritabani.SelectSorgusuTekSatir("SELECT * FROM S_Personel;", 8);

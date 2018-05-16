@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(musteri_bilgileri));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -50,15 +50,8 @@
             this.TextBox_Altyapi_ucreti = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.TextBox_alinacak_ucret = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.TextBox_alinmis_ucret = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.TextBox_Bitis_Tarihi = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.TextBox_baslangic_tarihi = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.TextBox_Arama = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.musteriUrun_dataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.musteriurunbilgisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.musteritakipDataSet = new StrenuousV1._0.musteritakipDataSet();
-            this.bunifuImageButton14 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.main_streneous = new System.Windows.Forms.Label();
-            this.musteriurunbilgisiTableAdapter1 = new StrenuousV1._0.musteritakipDataSetTableAdapters.musteriurunbilgisiTableAdapter();
             this.musIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.domainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ftpipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +61,17 @@
             this.bittarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alinmisucretDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alinacakucretDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musteriurunbilgisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.musteritakipDataSet = new StrenuousV1._0.musteritakipDataSet();
+            this.bunifuImageButton14 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.main_streneous = new System.Windows.Forms.Label();
+            this.musteriurunbilgisiTableAdapter1 = new StrenuousV1._0.musteritakipDataSetTableAdapters.musteriurunbilgisiTableAdapter();
+            this.s_personelTableAdapter1 = new StrenuousV1._0.musteritakipDataSetTableAdapters.S_personelTableAdapter();
+            this.TextBox_Mus_ID = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.bas_tarihi = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.bit_tarihi = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.musteritakipDataSet1 = new StrenuousV1._0.musteritakipDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
@@ -84,13 +88,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.musteriurunbilgisiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(152, 133);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(95, 133);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(118, 50);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +107,7 @@
             // 
             this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
             this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(152, 189);
+            this.bunifuImageButton3.Location = new System.Drawing.Point(95, 189);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
             this.bunifuImageButton3.Size = new System.Drawing.Size(118, 50);
             this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -114,7 +119,7 @@
             // 
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(152, 245);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(95, 245);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(118, 50);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -126,7 +131,7 @@
             // 
             this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
             this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(152, 301);
+            this.bunifuImageButton5.Location = new System.Drawing.Point(95, 301);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
             this.bunifuImageButton5.Size = new System.Drawing.Size(118, 50);
             this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,6 +211,7 @@
             this.bunifuImageButton11.TabIndex = 10;
             this.bunifuImageButton11.TabStop = false;
             this.bunifuImageButton11.Zoom = 10;
+            this.bunifuImageButton11.Click += new System.EventHandler(this.bunifuImageButton11_Click);
             // 
             // bunifuImageButton12
             // 
@@ -218,6 +224,7 @@
             this.bunifuImageButton12.TabIndex = 11;
             this.bunifuImageButton12.TabStop = false;
             this.bunifuImageButton12.Zoom = 10;
+            this.bunifuImageButton12.Click += new System.EventHandler(this.bunifuImageButton12_Click);
             // 
             // button_urunDuzenle
             // 
@@ -230,7 +237,7 @@
             this.button_urunDuzenle.TabIndex = 12;
             this.button_urunDuzenle.TabStop = false;
             this.button_urunDuzenle.Zoom = 10;
-            this.button_urunDuzenle.Click += new System.EventHandler(this.bunifuImageButton13_Click);
+            this.button_urunDuzenle.Click += new System.EventHandler(this.button_urunDuzenle_Click);
             // 
             // TextBox_domain_adi
             // 
@@ -254,7 +261,7 @@
             this.TextBox_domain_adi.IconPadding = 10;
             this.TextBox_domain_adi.IconRight = null;
             this.TextBox_domain_adi.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_domain_adi.Location = new System.Drawing.Point(276, 132);
+            this.TextBox_domain_adi.Location = new System.Drawing.Point(219, 132);
             this.TextBox_domain_adi.MaximumSize = new System.Drawing.Size(400, 100);
             this.TextBox_domain_adi.MaxLength = 32767;
             this.TextBox_domain_adi.MinimumSize = new System.Drawing.Size(100, 35);
@@ -266,7 +273,7 @@
             this.TextBox_domain_adi.SelectionLength = 0;
             this.TextBox_domain_adi.SelectionStart = 0;
             this.TextBox_domain_adi.ShortcutsEnabled = true;
-            this.TextBox_domain_adi.Size = new System.Drawing.Size(203, 49);
+            this.TextBox_domain_adi.Size = new System.Drawing.Size(247, 49);
             this.TextBox_domain_adi.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TextBox_domain_adi.TabIndex = 14;
             this.TextBox_domain_adi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -296,7 +303,7 @@
             this.TextBox_ftp_ip.IconPadding = 10;
             this.TextBox_ftp_ip.IconRight = null;
             this.TextBox_ftp_ip.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_ftp_ip.Location = new System.Drawing.Point(276, 187);
+            this.TextBox_ftp_ip.Location = new System.Drawing.Point(219, 187);
             this.TextBox_ftp_ip.MaximumSize = new System.Drawing.Size(400, 100);
             this.TextBox_ftp_ip.MaxLength = 32767;
             this.TextBox_ftp_ip.MinimumSize = new System.Drawing.Size(100, 35);
@@ -308,7 +315,7 @@
             this.TextBox_ftp_ip.SelectionLength = 0;
             this.TextBox_ftp_ip.SelectionStart = 0;
             this.TextBox_ftp_ip.ShortcutsEnabled = true;
-            this.TextBox_ftp_ip.Size = new System.Drawing.Size(203, 49);
+            this.TextBox_ftp_ip.Size = new System.Drawing.Size(247, 49);
             this.TextBox_ftp_ip.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TextBox_ftp_ip.TabIndex = 15;
             this.TextBox_ftp_ip.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -338,7 +345,7 @@
             this.TextBox_FTP_Sifre.IconPadding = 10;
             this.TextBox_FTP_Sifre.IconRight = null;
             this.TextBox_FTP_Sifre.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_FTP_Sifre.Location = new System.Drawing.Point(276, 246);
+            this.TextBox_FTP_Sifre.Location = new System.Drawing.Point(219, 246);
             this.TextBox_FTP_Sifre.MaximumSize = new System.Drawing.Size(400, 100);
             this.TextBox_FTP_Sifre.MaxLength = 32767;
             this.TextBox_FTP_Sifre.MinimumSize = new System.Drawing.Size(100, 35);
@@ -350,7 +357,7 @@
             this.TextBox_FTP_Sifre.SelectionLength = 0;
             this.TextBox_FTP_Sifre.SelectionStart = 0;
             this.TextBox_FTP_Sifre.ShortcutsEnabled = true;
-            this.TextBox_FTP_Sifre.Size = new System.Drawing.Size(203, 49);
+            this.TextBox_FTP_Sifre.Size = new System.Drawing.Size(247, 49);
             this.TextBox_FTP_Sifre.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TextBox_FTP_Sifre.TabIndex = 16;
             this.TextBox_FTP_Sifre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -380,9 +387,9 @@
             this.TextBox_Altyapi_ucreti.IconPadding = 10;
             this.TextBox_Altyapi_ucreti.IconRight = null;
             this.TextBox_Altyapi_ucreti.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_Altyapi_ucreti.Location = new System.Drawing.Point(276, 302);
+            this.TextBox_Altyapi_ucreti.Location = new System.Drawing.Point(219, 302);
             this.TextBox_Altyapi_ucreti.MaximumSize = new System.Drawing.Size(400, 100);
-            this.TextBox_Altyapi_ucreti.MaxLength = 32767;
+            this.TextBox_Altyapi_ucreti.MaxLength = 8;
             this.TextBox_Altyapi_ucreti.MinimumSize = new System.Drawing.Size(100, 35);
             this.TextBox_Altyapi_ucreti.Modified = false;
             this.TextBox_Altyapi_ucreti.Name = "TextBox_Altyapi_ucreti";
@@ -392,7 +399,7 @@
             this.TextBox_Altyapi_ucreti.SelectionLength = 0;
             this.TextBox_Altyapi_ucreti.SelectionStart = 0;
             this.TextBox_Altyapi_ucreti.ShortcutsEnabled = true;
-            this.TextBox_Altyapi_ucreti.Size = new System.Drawing.Size(203, 49);
+            this.TextBox_Altyapi_ucreti.Size = new System.Drawing.Size(247, 49);
             this.TextBox_Altyapi_ucreti.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TextBox_Altyapi_ucreti.TabIndex = 17;
             this.TextBox_Altyapi_ucreti.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -424,7 +431,7 @@
             this.TextBox_alinacak_ucret.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.TextBox_alinacak_ucret.Location = new System.Drawing.Point(625, 302);
             this.TextBox_alinacak_ucret.MaximumSize = new System.Drawing.Size(400, 100);
-            this.TextBox_alinacak_ucret.MaxLength = 32767;
+            this.TextBox_alinacak_ucret.MaxLength = 8;
             this.TextBox_alinacak_ucret.MinimumSize = new System.Drawing.Size(100, 35);
             this.TextBox_alinacak_ucret.Modified = false;
             this.TextBox_alinacak_ucret.Name = "TextBox_alinacak_ucret";
@@ -434,7 +441,7 @@
             this.TextBox_alinacak_ucret.SelectionLength = 0;
             this.TextBox_alinacak_ucret.SelectionStart = 0;
             this.TextBox_alinacak_ucret.ShortcutsEnabled = true;
-            this.TextBox_alinacak_ucret.Size = new System.Drawing.Size(203, 49);
+            this.TextBox_alinacak_ucret.Size = new System.Drawing.Size(247, 49);
             this.TextBox_alinacak_ucret.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TextBox_alinacak_ucret.TabIndex = 22;
             this.TextBox_alinacak_ucret.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -466,7 +473,7 @@
             this.TextBox_alinmis_ucret.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.TextBox_alinmis_ucret.Location = new System.Drawing.Point(625, 246);
             this.TextBox_alinmis_ucret.MaximumSize = new System.Drawing.Size(400, 100);
-            this.TextBox_alinmis_ucret.MaxLength = 32767;
+            this.TextBox_alinmis_ucret.MaxLength = 8;
             this.TextBox_alinmis_ucret.MinimumSize = new System.Drawing.Size(100, 35);
             this.TextBox_alinmis_ucret.Modified = false;
             this.TextBox_alinmis_ucret.Name = "TextBox_alinmis_ucret";
@@ -476,97 +483,13 @@
             this.TextBox_alinmis_ucret.SelectionLength = 0;
             this.TextBox_alinmis_ucret.SelectionStart = 0;
             this.TextBox_alinmis_ucret.ShortcutsEnabled = true;
-            this.TextBox_alinmis_ucret.Size = new System.Drawing.Size(203, 49);
+            this.TextBox_alinmis_ucret.Size = new System.Drawing.Size(247, 49);
             this.TextBox_alinmis_ucret.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TextBox_alinmis_ucret.TabIndex = 21;
             this.TextBox_alinmis_ucret.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextBox_alinmis_ucret.TextMarginLeft = 5;
             this.TextBox_alinmis_ucret.TextPlaceholder = "";
             this.TextBox_alinmis_ucret.UseSystemPasswordChar = false;
-            // 
-            // TextBox_Bitis_Tarihi
-            // 
-            this.TextBox_Bitis_Tarihi.AcceptsReturn = false;
-            this.TextBox_Bitis_Tarihi.AcceptsTab = false;
-            this.TextBox_Bitis_Tarihi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TextBox_Bitis_Tarihi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TextBox_Bitis_Tarihi.BackColor = System.Drawing.Color.Transparent;
-            this.TextBox_Bitis_Tarihi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TextBox_Bitis_Tarihi.BackgroundImage")));
-            this.TextBox_Bitis_Tarihi.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(56)))));
-            this.TextBox_Bitis_Tarihi.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.TextBox_Bitis_Tarihi.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(72)))), ((int)(((byte)(164)))));
-            this.TextBox_Bitis_Tarihi.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
-            this.TextBox_Bitis_Tarihi.BorderRadius = 1;
-            this.TextBox_Bitis_Tarihi.BorderThickness = 2;
-            this.TextBox_Bitis_Tarihi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TextBox_Bitis_Tarihi.FillColor = System.Drawing.Color.White;
-            this.TextBox_Bitis_Tarihi.HideSelection = true;
-            this.TextBox_Bitis_Tarihi.IconLeft = null;
-            this.TextBox_Bitis_Tarihi.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_Bitis_Tarihi.IconPadding = 10;
-            this.TextBox_Bitis_Tarihi.IconRight = null;
-            this.TextBox_Bitis_Tarihi.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_Bitis_Tarihi.Location = new System.Drawing.Point(625, 187);
-            this.TextBox_Bitis_Tarihi.MaximumSize = new System.Drawing.Size(400, 100);
-            this.TextBox_Bitis_Tarihi.MaxLength = 32767;
-            this.TextBox_Bitis_Tarihi.MinimumSize = new System.Drawing.Size(100, 35);
-            this.TextBox_Bitis_Tarihi.Modified = false;
-            this.TextBox_Bitis_Tarihi.Name = "TextBox_Bitis_Tarihi";
-            this.TextBox_Bitis_Tarihi.PasswordChar = '\0';
-            this.TextBox_Bitis_Tarihi.ReadOnly = false;
-            this.TextBox_Bitis_Tarihi.SelectedText = "";
-            this.TextBox_Bitis_Tarihi.SelectionLength = 0;
-            this.TextBox_Bitis_Tarihi.SelectionStart = 0;
-            this.TextBox_Bitis_Tarihi.ShortcutsEnabled = true;
-            this.TextBox_Bitis_Tarihi.Size = new System.Drawing.Size(203, 49);
-            this.TextBox_Bitis_Tarihi.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TextBox_Bitis_Tarihi.TabIndex = 20;
-            this.TextBox_Bitis_Tarihi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextBox_Bitis_Tarihi.TextMarginLeft = 5;
-            this.TextBox_Bitis_Tarihi.TextPlaceholder = "";
-            this.TextBox_Bitis_Tarihi.UseSystemPasswordChar = false;
-            // 
-            // TextBox_baslangic_tarihi
-            // 
-            this.TextBox_baslangic_tarihi.AcceptsReturn = false;
-            this.TextBox_baslangic_tarihi.AcceptsTab = false;
-            this.TextBox_baslangic_tarihi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TextBox_baslangic_tarihi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TextBox_baslangic_tarihi.BackColor = System.Drawing.Color.Transparent;
-            this.TextBox_baslangic_tarihi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TextBox_baslangic_tarihi.BackgroundImage")));
-            this.TextBox_baslangic_tarihi.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(56)))));
-            this.TextBox_baslangic_tarihi.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.TextBox_baslangic_tarihi.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(72)))), ((int)(((byte)(164)))));
-            this.TextBox_baslangic_tarihi.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
-            this.TextBox_baslangic_tarihi.BorderRadius = 1;
-            this.TextBox_baslangic_tarihi.BorderThickness = 2;
-            this.TextBox_baslangic_tarihi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TextBox_baslangic_tarihi.FillColor = System.Drawing.Color.White;
-            this.TextBox_baslangic_tarihi.HideSelection = true;
-            this.TextBox_baslangic_tarihi.IconLeft = null;
-            this.TextBox_baslangic_tarihi.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_baslangic_tarihi.IconPadding = 10;
-            this.TextBox_baslangic_tarihi.IconRight = null;
-            this.TextBox_baslangic_tarihi.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.TextBox_baslangic_tarihi.Location = new System.Drawing.Point(625, 132);
-            this.TextBox_baslangic_tarihi.MaximumSize = new System.Drawing.Size(400, 100);
-            this.TextBox_baslangic_tarihi.MaxLength = 32767;
-            this.TextBox_baslangic_tarihi.MinimumSize = new System.Drawing.Size(100, 35);
-            this.TextBox_baslangic_tarihi.Modified = false;
-            this.TextBox_baslangic_tarihi.Name = "TextBox_baslangic_tarihi";
-            this.TextBox_baslangic_tarihi.PasswordChar = '\0';
-            this.TextBox_baslangic_tarihi.ReadOnly = false;
-            this.TextBox_baslangic_tarihi.SelectedText = "";
-            this.TextBox_baslangic_tarihi.SelectionLength = 0;
-            this.TextBox_baslangic_tarihi.SelectionStart = 0;
-            this.TextBox_baslangic_tarihi.ShortcutsEnabled = true;
-            this.TextBox_baslangic_tarihi.Size = new System.Drawing.Size(203, 49);
-            this.TextBox_baslangic_tarihi.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TextBox_baslangic_tarihi.TabIndex = 19;
-            this.TextBox_baslangic_tarihi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextBox_baslangic_tarihi.TextMarginLeft = 5;
-            this.TextBox_baslangic_tarihi.TextPlaceholder = "";
-            this.TextBox_baslangic_tarihi.UseSystemPasswordChar = false;
             // 
             // TextBox_Arama
             // 
@@ -602,7 +525,7 @@
             this.TextBox_Arama.SelectionLength = 0;
             this.TextBox_Arama.SelectionStart = 0;
             this.TextBox_Arama.ShortcutsEnabled = true;
-            this.TextBox_Arama.Size = new System.Drawing.Size(203, 44);
+            this.TextBox_Arama.Size = new System.Drawing.Size(247, 44);
             this.TextBox_Arama.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.TextBox_Arama.TabIndex = 18;
             this.TextBox_Arama.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -612,20 +535,20 @@
             // 
             // musteriUrun_dataGrid
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.musteriUrun_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.musteriUrun_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.musteriUrun_dataGrid.AutoGenerateColumns = false;
             this.musteriUrun_dataGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.musteriUrun_dataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.musteriUrun_dataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.musteriUrun_dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.musteriUrun_dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.musteriUrun_dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.musteriUrun_dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.musIDDataGridViewTextBoxColumn,
@@ -648,45 +571,8 @@
             this.musteriUrun_dataGrid.RowTemplate.Height = 24;
             this.musteriUrun_dataGrid.Size = new System.Drawing.Size(953, 222);
             this.musteriUrun_dataGrid.TabIndex = 23;
+            this.musteriUrun_dataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.musteriUrun_dataGrid_CellClick);
             this.musteriUrun_dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.musteriUrun_dataGrid_CellContentClick);
-            // 
-            // musteriurunbilgisiBindingSource
-            // 
-            this.musteriurunbilgisiBindingSource.DataMember = "musteriurunbilgisi";
-            this.musteriurunbilgisiBindingSource.DataSource = this.musteritakipDataSet;
-            // 
-            // musteritakipDataSet
-            // 
-            this.musteritakipDataSet.DataSetName = "musteritakipDataSet";
-            this.musteritakipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bunifuImageButton14
-            // 
-            this.bunifuImageButton14.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton14.Image")));
-            this.bunifuImageButton14.ImageActive = null;
-            this.bunifuImageButton14.Location = new System.Drawing.Point(31, 21);
-            this.bunifuImageButton14.Name = "bunifuImageButton14";
-            this.bunifuImageButton14.Size = new System.Drawing.Size(43, 32);
-            this.bunifuImageButton14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton14.TabIndex = 28;
-            this.bunifuImageButton14.TabStop = false;
-            this.bunifuImageButton14.Zoom = 10;
-            // 
-            // main_streneous
-            // 
-            this.main_streneous.AutoSize = true;
-            this.main_streneous.BackColor = System.Drawing.Color.Transparent;
-            this.main_streneous.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.main_streneous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
-            this.main_streneous.Location = new System.Drawing.Point(80, 21);
-            this.main_streneous.Name = "main_streneous";
-            this.main_streneous.Size = new System.Drawing.Size(241, 32);
-            this.main_streneous.TabIndex = 27;
-            this.main_streneous.Text = "Müşteri Ürün Bilgileri";
-            // 
-            // musteriurunbilgisiTableAdapter1
-            // 
-            this.musteriurunbilgisiTableAdapter1.ClearBeforeFill = true;
             // 
             // musIDDataGridViewTextBoxColumn
             // 
@@ -751,17 +637,143 @@
             this.alinacakucretDataGridViewTextBoxColumn.Name = "alinacakucretDataGridViewTextBoxColumn";
             this.alinacakucretDataGridViewTextBoxColumn.Width = 80;
             // 
+            // musteriurunbilgisiBindingSource
+            // 
+            this.musteriurunbilgisiBindingSource.DataMember = "musteriurunbilgisi";
+            this.musteriurunbilgisiBindingSource.DataSource = this.musteritakipDataSet;
+            // 
+            // musteritakipDataSet
+            // 
+            this.musteritakipDataSet.DataSetName = "musteritakipDataSet";
+            this.musteritakipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bunifuImageButton14
+            // 
+            this.bunifuImageButton14.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton14.Image")));
+            this.bunifuImageButton14.ImageActive = null;
+            this.bunifuImageButton14.Location = new System.Drawing.Point(31, 21);
+            this.bunifuImageButton14.Name = "bunifuImageButton14";
+            this.bunifuImageButton14.Size = new System.Drawing.Size(43, 32);
+            this.bunifuImageButton14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton14.TabIndex = 28;
+            this.bunifuImageButton14.TabStop = false;
+            this.bunifuImageButton14.Zoom = 10;
+            // 
+            // main_streneous
+            // 
+            this.main_streneous.AutoSize = true;
+            this.main_streneous.BackColor = System.Drawing.Color.Transparent;
+            this.main_streneous.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.main_streneous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
+            this.main_streneous.Location = new System.Drawing.Point(80, 21);
+            this.main_streneous.Name = "main_streneous";
+            this.main_streneous.Size = new System.Drawing.Size(241, 32);
+            this.main_streneous.TabIndex = 27;
+            this.main_streneous.Text = "Müşteri Ürün Bilgileri";
+            // 
+            // musteriurunbilgisiTableAdapter1
+            // 
+            this.musteriurunbilgisiTableAdapter1.ClearBeforeFill = true;
+            // 
+            // s_personelTableAdapter1
+            // 
+            this.s_personelTableAdapter1.ClearBeforeFill = true;
+            // 
+            // TextBox_Mus_ID
+            // 
+            this.TextBox_Mus_ID.AcceptsReturn = false;
+            this.TextBox_Mus_ID.AcceptsTab = false;
+            this.TextBox_Mus_ID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TextBox_Mus_ID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TextBox_Mus_ID.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_Mus_ID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TextBox_Mus_ID.BackgroundImage")));
+            this.TextBox_Mus_ID.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(168)))), ((int)(((byte)(56)))));
+            this.TextBox_Mus_ID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.TextBox_Mus_ID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(72)))), ((int)(((byte)(164)))));
+            this.TextBox_Mus_ID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.TextBox_Mus_ID.BorderRadius = 1;
+            this.TextBox_Mus_ID.BorderThickness = 2;
+            this.TextBox_Mus_ID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TextBox_Mus_ID.FillColor = System.Drawing.Color.White;
+            this.TextBox_Mus_ID.HideSelection = true;
+            this.TextBox_Mus_ID.IconLeft = null;
+            this.TextBox_Mus_ID.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.TextBox_Mus_ID.IconPadding = 10;
+            this.TextBox_Mus_ID.IconRight = null;
+            this.TextBox_Mus_ID.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.TextBox_Mus_ID.Location = new System.Drawing.Point(219, 78);
+            this.TextBox_Mus_ID.MaximumSize = new System.Drawing.Size(400, 100);
+            this.TextBox_Mus_ID.MaxLength = 32767;
+            this.TextBox_Mus_ID.MinimumSize = new System.Drawing.Size(100, 35);
+            this.TextBox_Mus_ID.Modified = false;
+            this.TextBox_Mus_ID.Name = "TextBox_Mus_ID";
+            this.TextBox_Mus_ID.PasswordChar = '\0';
+            this.TextBox_Mus_ID.ReadOnly = false;
+            this.TextBox_Mus_ID.SelectedText = "";
+            this.TextBox_Mus_ID.SelectionLength = 0;
+            this.TextBox_Mus_ID.SelectionStart = 0;
+            this.TextBox_Mus_ID.ShortcutsEnabled = true;
+            this.TextBox_Mus_ID.Size = new System.Drawing.Size(247, 49);
+            this.TextBox_Mus_ID.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.TextBox_Mus_ID.TabIndex = 29;
+            this.TextBox_Mus_ID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBox_Mus_ID.TextMarginLeft = 5;
+            this.TextBox_Mus_ID.TextPlaceholder = "";
+            this.TextBox_Mus_ID.UseSystemPasswordChar = false;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // bas_tarihi
+            // 
+            this.bas_tarihi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
+            this.bas_tarihi.BorderRadius = 0;
+            this.bas_tarihi.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bas_tarihi.ForeColor = System.Drawing.Color.White;
+            this.bas_tarihi.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bas_tarihi.FormatCustom = null;
+            this.bas_tarihi.Location = new System.Drawing.Point(625, 136);
+            this.bas_tarihi.Margin = new System.Windows.Forms.Padding(1, 4, 1, 4);
+            this.bas_tarihi.Name = "bas_tarihi";
+            this.bas_tarihi.Size = new System.Drawing.Size(247, 47);
+            this.bas_tarihi.TabIndex = 30;
+            this.bas_tarihi.Value = new System.DateTime(2018, 5, 9, 22, 11, 26, 306);
+            // 
+            // bit_tarihi
+            // 
+            this.bit_tarihi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
+            this.bit_tarihi.BorderRadius = 0;
+            this.bit_tarihi.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bit_tarihi.ForeColor = System.Drawing.Color.White;
+            this.bit_tarihi.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bit_tarihi.FormatCustom = null;
+            this.bit_tarihi.Location = new System.Drawing.Point(625, 192);
+            this.bit_tarihi.Margin = new System.Windows.Forms.Padding(1, 4, 1, 4);
+            this.bit_tarihi.Name = "bit_tarihi";
+            this.bit_tarihi.Size = new System.Drawing.Size(247, 47);
+            this.bit_tarihi.TabIndex = 31;
+            this.bit_tarihi.Value = new System.DateTime(2018, 5, 9, 22, 11, 26, 306);
+            // 
+            // musteritakipDataSet1
+            // 
+            this.musteritakipDataSet1.DataSetName = "musteritakipDataSet";
+            this.musteritakipDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // musteri_bilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.bit_tarihi);
+            this.Controls.Add(this.bas_tarihi);
+            this.Controls.Add(this.TextBox_Mus_ID);
             this.Controls.Add(this.bunifuImageButton14);
             this.Controls.Add(this.main_streneous);
             this.Controls.Add(this.musteriUrun_dataGrid);
             this.Controls.Add(this.TextBox_alinacak_ucret);
             this.Controls.Add(this.TextBox_alinmis_ucret);
-            this.Controls.Add(this.TextBox_Bitis_Tarihi);
-            this.Controls.Add(this.TextBox_baslangic_tarihi);
             this.Controls.Add(this.TextBox_Arama);
             this.Controls.Add(this.TextBox_Altyapi_ucreti);
             this.Controls.Add(this.TextBox_FTP_Sifre);
@@ -798,6 +810,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.musteriurunbilgisiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musteritakipDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -822,8 +835,6 @@
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_Altyapi_ucreti;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_alinacak_ucret;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_alinmis_ucret;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_Bitis_Tarihi;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_baslangic_tarihi;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_Arama;
         private Bunifu.Framework.UI.BunifuCustomDataGrid musteriUrun_dataGrid;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton14;
@@ -840,5 +851,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bittarihiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn alinmisucretDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn alinacakucretDataGridViewTextBoxColumn;
+        private musteritakipDataSetTableAdapters.S_personelTableAdapter s_personelTableAdapter1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TextBox_Mus_ID;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private Bunifu.Framework.UI.BunifuDatepicker bas_tarihi;
+        private Bunifu.Framework.UI.BunifuDatepicker bit_tarihi;
+        private musteritakipDataSet musteritakipDataSet1;
     }
 }

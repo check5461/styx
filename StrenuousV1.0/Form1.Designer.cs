@@ -45,6 +45,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.page_login1 = new StrenuousV1._0.page_login();
+            this.page_kayitol1 = new StrenuousV1._0.page_kayitol();
+            this.page_destek1 = new StrenuousV1._0.page_destek();
+            this.page_kisiselbilgilerim1 = new StrenuousV1._0.page_kisiselbilgilerim();
             this.musteri_bilgileri1 = new StrenuousV1._0.musteri_bilgileri();
             this.page_musterilerim1 = new StrenuousV1._0.page_musterilerim();
             this.panel1.SuspendLayout();
@@ -220,6 +224,7 @@
             this.kisiselbilgilerim.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.kisiselbilgilerim.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
             this.kisiselbilgilerim.TextFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kisiselbilgilerim.Click += new System.EventHandler(this.kisiselbilgilerim_Click);
             // 
             // musteribilgileri
             // 
@@ -316,12 +321,45 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.page_login1);
+            this.panel5.Controls.Add(this.page_kayitol1);
+            this.panel5.Controls.Add(this.page_destek1);
+            this.panel5.Controls.Add(this.page_kisiselbilgilerim1);
             this.panel5.Controls.Add(this.musteri_bilgileri1);
             this.panel5.Controls.Add(this.page_musterilerim1);
             this.panel5.Location = new System.Drawing.Point(264, 56);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(968, 675);
             this.panel5.TabIndex = 2;
+            // 
+            // page_login1
+            // 
+            this.page_login1.Location = new System.Drawing.Point(3, 0);
+            this.page_login1.Name = "page_login1";
+            this.page_login1.Size = new System.Drawing.Size(968, 675);
+            this.page_login1.TabIndex = 6;
+            this.page_login1.Load += new System.EventHandler(this.page_login1_Load);
+            // 
+            // page_kayitol1
+            // 
+            this.page_kayitol1.Location = new System.Drawing.Point(3, 0);
+            this.page_kayitol1.Name = "page_kayitol1";
+            this.page_kayitol1.Size = new System.Drawing.Size(968, 675);
+            this.page_kayitol1.TabIndex = 5;
+            // 
+            // page_destek1
+            // 
+            this.page_destek1.Location = new System.Drawing.Point(0, 0);
+            this.page_destek1.Name = "page_destek1";
+            this.page_destek1.Size = new System.Drawing.Size(968, 675);
+            this.page_destek1.TabIndex = 3;
+            // 
+            // page_kisiselbilgilerim1
+            // 
+            this.page_kisiselbilgilerim1.Location = new System.Drawing.Point(0, 0);
+            this.page_kisiselbilgilerim1.Name = "page_kisiselbilgilerim1";
+            this.page_kisiselbilgilerim1.Size = new System.Drawing.Size(1041, 675);
+            this.page_kisiselbilgilerim1.TabIndex = 2;
             // 
             // musteri_bilgileri1
             // 
@@ -380,6 +418,10 @@
         private System.Windows.Forms.Panel panel5;
         private page_musterilerim page_musterilerim1;
         private musteri_bilgileri musteri_bilgileri1;
+        private page_kisiselbilgilerim page_kisiselbilgilerim1;
+        private page_destek page_destek1;
+        private page_login page_login1;
+        private page_kayitol page_kayitol1;
     }
 }
 
