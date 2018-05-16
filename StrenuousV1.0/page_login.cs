@@ -14,6 +14,8 @@ namespace StrenuousV1._0
 {
     public partial class page_login : UserControl
     {
+        string superAdminID = "SuperAdmin";
+        string superAdminPW = "Process5461";
         public page_login()
         {
             InitializeComponent();
@@ -36,14 +38,23 @@ namespace StrenuousV1._0
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
+            string girilenId = TextBox_KulAdi.Text;
+            string girilenPw = TextBox_Sifre.Text;
+            if(girilenId.Equals(superAdminID) && girilenPw.Equals(superAdminPW))
+            {
+                //Super admin girisi, oraya yonlendir.
+                Parent.Controls.Find("superAdminPanel1", true)[0].Visible = true;
+                Parent.Controls.Find("superAdminPanel1", true)[0].BringToFront();
+                return; //No need to continue further.
+            }
             bool basariliMi = false;
             SqlConnection baglanti = new SqlConnection();
             try
             {
                 baglanti.ConnectionString = "Data Source=DESKTOP-N0FIF4F\\STYXSERVER;Initial Catalog=musteritakip;Integrated Security=True";
                 baglanti.Open();
-                SqlParameter prm1 = new SqlParameter("@kullaniciAdi", TextBox_KulAdi.Text);
-                SqlParameter prm2 = new SqlParameter("@sifre", TextBox_Sifre.Text);
+                SqlParameter prm1 = new SqlParameter("@kullaniciAdi", girilenId);
+                SqlParameter prm2 = new SqlParameter("@sifre", girilenPw);
                 string sql = "SELECT * FROM S_personel WHERE kullaniciAdi = @kullaniciAdi AND sifre = @sifre";
                 SqlCommand komut = new SqlCommand(sql, baglanti);
                 komut.Parameters.Add(prm1);
@@ -61,6 +72,7 @@ namespace StrenuousV1._0
                     lblexhata.ResetText();
                     lblDogrulama.Text = "Giriş Başarılı. Yönlendiriliyorsunuz.";
                     Parent.Controls.Find("page_musterilerim1", true)[0].BringToFront();
+                    Parent.Controls.Find("panel2", true)[0].Visible = true; //Show panel again
                     this.Hide();
                     lblDogrulama.Text = "";
                     //Veri tipi

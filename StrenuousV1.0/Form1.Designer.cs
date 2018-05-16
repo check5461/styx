@@ -45,6 +45,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.superAdminPanel1 = new StrenuousV1._0.SuperAdminPanel();
             this.page_login1 = new StrenuousV1._0.page_login();
             this.page_kayitol1 = new StrenuousV1._0.page_kayitol();
             this.page_destek1 = new StrenuousV1._0.page_destek();
@@ -74,8 +75,9 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1235, 57);
+            this.panel1.Size = new System.Drawing.Size(926, 46);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -87,9 +89,10 @@
             this.main_streneous.BackColor = System.Drawing.Color.Transparent;
             this.main_streneous.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.main_streneous.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.main_streneous.Location = new System.Drawing.Point(8, 9);
+            this.main_streneous.Location = new System.Drawing.Point(6, 7);
+            this.main_streneous.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.main_streneous.Name = "main_streneous";
-            this.main_streneous.Size = new System.Drawing.Size(121, 32);
+            this.main_streneous.Size = new System.Drawing.Size(96, 25);
             this.main_streneous.TabIndex = 3;
             this.main_streneous.Text = "Streneous";
             // 
@@ -97,9 +100,10 @@
             // 
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1125, 8);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(844, 6);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(47, 42);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(35, 34);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton2.TabIndex = 2;
             this.bunifuImageButton2.TabStop = false;
@@ -110,9 +114,10 @@
             // 
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1178, 8);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(884, 6);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(47, 42);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 34);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 1;
             this.bunifuImageButton1.TabStop = false;
@@ -121,9 +126,10 @@
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(0, 57);
+            this.panel3.Location = new System.Drawing.Point(0, 46);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(270, 201);
+            this.panel3.Size = new System.Drawing.Size(202, 163);
             this.panel3.TabIndex = 0;
             // 
             // panel2
@@ -135,9 +141,10 @@
             this.panel2.Controls.Add(this.musteribilgileri);
             this.panel2.Controls.Add(this.musteri_button);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(0, 57);
+            this.panel2.Location = new System.Drawing.Point(0, 46);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(270, 674);
+            this.panel2.Size = new System.Drawing.Size(202, 548);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -146,9 +153,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
-            this.label1.Location = new System.Drawing.Point(135, 648);
+            this.label1.Location = new System.Drawing.Point(101, 526);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 23);
+            this.label1.Size = new System.Drawing.Size(102, 19);
             this.label1.TabIndex = 4;
             this.label1.Text = "Streneous V1.0";
             // 
@@ -174,14 +182,13 @@
             this.destek.IconVisible = true;
             this.destek.IconZoom = 50D;
             this.destek.IsTab = false;
-            this.destek.Location = new System.Drawing.Point(0, 440);
-            this.destek.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.destek.Location = new System.Drawing.Point(0, 358);
             this.destek.Name = "destek";
             this.destek.Normalcolor = System.Drawing.Color.White;
             this.destek.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.destek.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
             this.destek.selected = false;
-            this.destek.Size = new System.Drawing.Size(283, 59);
+            this.destek.Size = new System.Drawing.Size(212, 48);
             this.destek.TabIndex = 5;
             this.destek.Text = "       Destek";
             this.destek.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,14 +218,13 @@
             this.kisiselbilgilerim.IconVisible = true;
             this.kisiselbilgilerim.IconZoom = 50D;
             this.kisiselbilgilerim.IsTab = false;
-            this.kisiselbilgilerim.Location = new System.Drawing.Point(0, 375);
-            this.kisiselbilgilerim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kisiselbilgilerim.Location = new System.Drawing.Point(0, 305);
             this.kisiselbilgilerim.Name = "kisiselbilgilerim";
             this.kisiselbilgilerim.Normalcolor = System.Drawing.Color.White;
             this.kisiselbilgilerim.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.kisiselbilgilerim.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
             this.kisiselbilgilerim.selected = false;
-            this.kisiselbilgilerim.Size = new System.Drawing.Size(283, 59);
+            this.kisiselbilgilerim.Size = new System.Drawing.Size(212, 48);
             this.kisiselbilgilerim.TabIndex = 4;
             this.kisiselbilgilerim.Text = "       Kişisel Bilgilerim";
             this.kisiselbilgilerim.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -248,14 +254,13 @@
             this.musteribilgileri.IconVisible = true;
             this.musteribilgileri.IconZoom = 50D;
             this.musteribilgileri.IsTab = false;
-            this.musteribilgileri.Location = new System.Drawing.Point(0, 308);
-            this.musteribilgileri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.musteribilgileri.Location = new System.Drawing.Point(0, 250);
             this.musteribilgileri.Name = "musteribilgileri";
             this.musteribilgileri.Normalcolor = System.Drawing.Color.White;
             this.musteribilgileri.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.musteribilgileri.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
             this.musteribilgileri.selected = false;
-            this.musteribilgileri.Size = new System.Drawing.Size(283, 59);
+            this.musteribilgileri.Size = new System.Drawing.Size(212, 48);
             this.musteribilgileri.TabIndex = 2;
             this.musteribilgileri.Text = "       Müşteri Bilgileri";
             this.musteribilgileri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,14 +290,13 @@
             this.musteri_button.IconVisible = true;
             this.musteri_button.IconZoom = 50D;
             this.musteri_button.IsTab = false;
-            this.musteri_button.Location = new System.Drawing.Point(0, 246);
-            this.musteri_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.musteri_button.Location = new System.Drawing.Point(0, 200);
             this.musteri_button.Name = "musteri_button";
             this.musteri_button.Normalcolor = System.Drawing.Color.White;
             this.musteri_button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.musteri_button.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
             this.musteri_button.selected = false;
-            this.musteri_button.Size = new System.Drawing.Size(283, 59);
+            this.musteri_button.Size = new System.Drawing.Size(212, 48);
             this.musteri_button.TabIndex = 1;
             this.musteri_button.Text = "       Müşterilerim";
             this.musteri_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -304,8 +308,9 @@
             // 
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(270, 239);
+            this.panel4.Size = new System.Drawing.Size(202, 194);
             this.panel4.TabIndex = 0;
             // 
             // pictureBox1
@@ -313,77 +318,97 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(270, 239);
+            this.pictureBox1.Size = new System.Drawing.Size(202, 194);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.superAdminPanel1);
             this.panel5.Controls.Add(this.page_login1);
             this.panel5.Controls.Add(this.page_kayitol1);
             this.panel5.Controls.Add(this.page_destek1);
             this.panel5.Controls.Add(this.page_kisiselbilgilerim1);
             this.panel5.Controls.Add(this.musteri_bilgileri1);
             this.panel5.Controls.Add(this.page_musterilerim1);
-            this.panel5.Location = new System.Drawing.Point(264, 56);
+            this.panel5.Location = new System.Drawing.Point(198, 46);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(968, 675);
+            this.panel5.Size = new System.Drawing.Size(726, 548);
             this.panel5.TabIndex = 2;
+            // 
+            // superAdminPanel1
+            // 
+            this.superAdminPanel1.Location = new System.Drawing.Point(-93, 0);
+            this.superAdminPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.superAdminPanel1.Name = "superAdminPanel1";
+            this.superAdminPanel1.Size = new System.Drawing.Size(819, 548);
+            this.superAdminPanel1.TabIndex = 7;
+            this.superAdminPanel1.Visible = false;
             // 
             // page_login1
             // 
-            this.page_login1.Location = new System.Drawing.Point(3, 0);
+            this.page_login1.Location = new System.Drawing.Point(-93, 0);
+            this.page_login1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.page_login1.Name = "page_login1";
-            this.page_login1.Size = new System.Drawing.Size(968, 675);
+            this.page_login1.Size = new System.Drawing.Size(821, 548);
             this.page_login1.TabIndex = 6;
             this.page_login1.Load += new System.EventHandler(this.page_login1_Load);
             // 
             // page_kayitol1
             // 
-            this.page_kayitol1.Location = new System.Drawing.Point(3, 0);
+            this.page_kayitol1.Location = new System.Drawing.Point(2, 0);
+            this.page_kayitol1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.page_kayitol1.Name = "page_kayitol1";
-            this.page_kayitol1.Size = new System.Drawing.Size(968, 675);
+            this.page_kayitol1.Size = new System.Drawing.Size(726, 548);
             this.page_kayitol1.TabIndex = 5;
             // 
             // page_destek1
             // 
             this.page_destek1.Location = new System.Drawing.Point(0, 0);
+            this.page_destek1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.page_destek1.Name = "page_destek1";
-            this.page_destek1.Size = new System.Drawing.Size(968, 675);
+            this.page_destek1.Size = new System.Drawing.Size(726, 548);
             this.page_destek1.TabIndex = 3;
             // 
             // page_kisiselbilgilerim1
             // 
             this.page_kisiselbilgilerim1.Location = new System.Drawing.Point(0, 0);
+            this.page_kisiselbilgilerim1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.page_kisiselbilgilerim1.Name = "page_kisiselbilgilerim1";
-            this.page_kisiselbilgilerim1.Size = new System.Drawing.Size(1041, 675);
+            this.page_kisiselbilgilerim1.Size = new System.Drawing.Size(781, 548);
             this.page_kisiselbilgilerim1.TabIndex = 2;
             // 
             // musteri_bilgileri1
             // 
-            this.musteri_bilgileri1.Location = new System.Drawing.Point(3, 0);
+            this.musteri_bilgileri1.Location = new System.Drawing.Point(2, 0);
+            this.musteri_bilgileri1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.musteri_bilgileri1.Name = "musteri_bilgileri1";
-            this.musteri_bilgileri1.Size = new System.Drawing.Size(965, 675);
+            this.musteri_bilgileri1.Size = new System.Drawing.Size(724, 548);
             this.musteri_bilgileri1.TabIndex = 1;
             // 
             // page_musterilerim1
             // 
             this.page_musterilerim1.Location = new System.Drawing.Point(0, 0);
+            this.page_musterilerim1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.page_musterilerim1.Name = "page_musterilerim1";
-            this.page_musterilerim1.Size = new System.Drawing.Size(968, 672);
+            this.page_musterilerim1.Size = new System.Drawing.Size(726, 546);
             this.page_musterilerim1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 732);
+            this.ClientSize = new System.Drawing.Size(926, 595);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -422,6 +447,7 @@
         private page_destek page_destek1;
         private page_login page_login1;
         private page_kayitol page_kayitol1;
+        private SuperAdminPanel superAdminPanel1;
     }
 }
 

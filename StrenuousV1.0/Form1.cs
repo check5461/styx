@@ -65,7 +65,12 @@ namespace StrenuousV1._0
 
         private void page_login1_Load(object sender, EventArgs e)
         {
+            panel2.Visible = false; //Hide panel until we log in
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            page_login1.BringToFront();
         }
     }
 }
